@@ -26,7 +26,7 @@ public class ReverseStringWIthSpace {
 
 		String reverseString[] = new String[old.length()];
 		for(int i=0;i<old.length();i++) {		
-			
+
 			reverseString[i]=old.charAt((old.length())-i-1)+" ";
 			System.out.print(reverseString[i]);
 		}
