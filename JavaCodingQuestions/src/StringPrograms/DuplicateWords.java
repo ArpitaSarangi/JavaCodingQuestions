@@ -1,5 +1,7 @@
 package StringPrograms;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class DuplicateWords {
@@ -9,20 +11,17 @@ public class DuplicateWords {
 		Scanner sc = new Scanner(System.in);
 		String sentence = sc.nextLine();
 		String words[] = sentence.split(" ");
-		int count = 0;
-		for (int i = 0; i < words.length; i++) {
-			count = 1;
-			for (int j = i + 1; j < words.length; j++) {
+		ArrayList<String> a1=new ArrayList<String>(Arrays.asList(words));		
+		for (int i = 0; i < a1.size(); i++) {
+			
+			for (int j = i + 1; j < a1.size(); j++) {
 
-				if (words[i].equals(words[j])) {
-					count++;
-					words[j] = "0";
+				if (a1.get(i).contains(a1.get(j))) {
+				
+					System.out.println("Duplicate words are: "+ a1.get(i));
 				}
 			}
-			if (count > 1 && words[i] != "0") {
-				System.out.println(words[i]);
-				System.out.println(count);
-			}
+			
 		}
 	}
 
