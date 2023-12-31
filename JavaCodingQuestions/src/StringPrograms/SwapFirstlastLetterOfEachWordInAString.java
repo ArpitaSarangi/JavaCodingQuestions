@@ -9,7 +9,7 @@ public class SwapFirstlastLetterOfEachWordInAString {
 		// shiT si a doog yad , khanT uoy
 		String old = "This is a good day , Thank you";
 
-		String[] arr = null;
+		String[] arr = new String[old.length()];
 
 		for (int i = 0; i < old.length(); i++) {
 			arr = old.split(" ");
