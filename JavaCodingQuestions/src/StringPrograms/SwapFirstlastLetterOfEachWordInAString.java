@@ -12,7 +12,9 @@ public class SwapFirstlastLetterOfEachWordInAString {
 		String[] arr = new String[old.length()];
 
 		for (int i = 0; i < old.length(); i++) {
-			arr = old.split(" ");
+			
+			arr = old.split(" ");//This
+			
 			char[] c = new char[arr[i].length()];
 			for (int j = 0; j < arr[i].length(); j++) {
 
@@ -29,7 +31,7 @@ public class SwapFirstlastLetterOfEachWordInAString {
 			System.out.println(c);
 
 		}
-
+		
 	}
 
 }
