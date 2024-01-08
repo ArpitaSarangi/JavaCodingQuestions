@@ -17,11 +17,13 @@ public class ReverseArrayList {
 		al.add("17");
 		al.add("18");
 		System.out.println(al);
-		ArrayList<String> al2=new ArrayList<>(al.size());
+		ArrayList<String> al2=new ArrayList<>();
 		
-		for(int i=al.size()-1;i>=0;i--) {
-			
+		
+		for(int i=0;i<al.size();i++) {
+			al2.add(i, al.get(al.size()-1-i));
 		}
+		System.out.println(al2);
 		
 	}
 
