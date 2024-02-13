@@ -7,9 +7,7 @@ import java.util.Scanner;
 public class DuplicateWords {
 
 	public static void main(String[] args) {
-		System.out.println("Enter any string:");
-		Scanner sc = new Scanner(System.in);
-		String sentence = sc.nextLine();
+		String sentence = "You are the greatest person I know in my life.You will be the best";
 		String words[] = sentence.split(" ");
 		ArrayList<String> a1=new ArrayList<String>(Arrays.asList(words));		
 		for (int i = 0; i < a1.size(); i++) {

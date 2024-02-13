@@ -1,6 +1,5 @@
 package StringPrograms;
 
-import java.util.Scanner;
 
 public class PalindromeString {
 	public boolean checkPalindrome(String original) {
@@ -18,9 +17,7 @@ public class PalindromeString {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("Enter the String to check Palindrome or not:");
-		Scanner sc = new Scanner(System.in);
-		String original = sc.nextLine();
+		String original = "madam";
 		PalindromeString p = new PalindromeString();
 		System.out.println(p.checkPalindrome(original));
 	}

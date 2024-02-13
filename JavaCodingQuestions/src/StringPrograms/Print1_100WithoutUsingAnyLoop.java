@@ -13,7 +13,6 @@ public class Print1_100WithoutUsingAnyLoop {
 	}
 
 	public static void main(String[] args) {
-		// print 1-100 without using any loop
 
 		print(100);
 	}
