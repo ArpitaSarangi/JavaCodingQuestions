@@ -1,26 +1,33 @@
 package StringPrograms;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
 
 public class DuplicateWords {
 
 	public static void main(String[] args) {
-		String sentence = "You are the greatest person I know in my life.You will be the best";
+		//String sentence = "You are the greatest you the person I know you in my life. You will be the best";
+		String sentence="Arpita is a manual tester and automation tester";
+		sentence=sentence.toLowerCase();
 		String words[] = sentence.split(" ");
-		ArrayList<String> a1=new ArrayList<String>(Arrays.asList(words));		
-		for (int i = 0; i < a1.size(); i++) {
-			
-			for (int j = i + 1; j < a1.size(); j++) {
+		
+		int count ;
+		for (int i = 0; i < words.length; i++) {
+			count = 1;
+			for (int j = i + 1; j < words.length; j++) {
 
-				if (a1.get(i).contains(a1.get(j))) {
-				
-					System.out.println("Duplicate words are: "+ a1.get(i));
+				if (words[i].equals(words[j])) {
+
+					count++;
+					words[j]="0";
+					
 				}
 			}
-			
+
+			if(count>1 && words[i]!="0") {
+				System.out.println("Duplicate words are: " + words[i] + " & their Count :" + count);
+				
+			}
 		}
+		
 	}
 
 }

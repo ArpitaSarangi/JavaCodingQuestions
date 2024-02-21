@@ -1,17 +1,23 @@
 package CollectionTypeChange;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
+
 
 public class ArrayToArrayList {
 
 	public static void main(String[] args) {
-		
-		String s[]={"This","is"," a" ,"string"," which"," I want"," to", "convert"," into"," a"," ArrayList"," of"," string"," type."};
-		
-		
-		ArrayList<String> al=new ArrayList<String>(Arrays.asList(s));
-		System.out.println(al);
+
+		int s[] = { 1, 2, 3, 4, 5 };
+
+		ArrayList<Integer> al = new ArrayList<Integer>(s.length);
+
+		for (int i = 0; i < s.length; i++) {
+			al.add(s[i]);
+		}
+
+		for (int i = 0; i < al.size(); i++) {
+			System.out.println(al.get(i));
+		}
 	}
 
 }

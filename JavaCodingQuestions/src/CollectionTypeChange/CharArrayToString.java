@@ -3,7 +3,10 @@ package CollectionTypeChange;
 public class CharArrayToString {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		char[] c= {'a','r','p','i','t','a'};
+		
+		String s=c.toString();
+		System.out.println(c);
 
 	}
 

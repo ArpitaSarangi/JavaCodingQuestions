@@ -3,7 +3,11 @@ package CollectionTypeChange;
 public class StringArrayToString {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		String[] s= {"Mama","is","a","good","girl"};
+		
+		String p=s.toString();
+		
+		System.out.println(p);
 
 	}
 
