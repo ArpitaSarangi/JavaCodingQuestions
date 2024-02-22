@@ -8,17 +8,13 @@ public class DuplicateWords {
 		String sentence="Arpita is a manual tester and automation tester";
 		sentence=sentence.toLowerCase();
 		String words[] = sentence.split(" ");
-		
 		int count ;
 		for (int i = 0; i < words.length; i++) {
 			count = 1;
 			for (int j = i + 1; j < words.length; j++) {
-
 				if (words[i].equals(words[j])) {
-
 					count++;
-					words[j]="0";
-					
+					words[j]="0";				
 				}
 			}
 

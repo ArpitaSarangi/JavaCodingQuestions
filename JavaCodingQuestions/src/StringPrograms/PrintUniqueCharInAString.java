@@ -7,10 +7,8 @@ public class PrintUniqueCharInAString {
 		// "Arpita Sarangi"
 		// Print Unique char: p,t,s,n,g
 
-		String s = "Arpita Sarangi";
-	
+		String s = "Arpita Sarangi";	
 		s=s.toLowerCase();
-
 		for (int i = 0; i <= s.length() - 1; i++) {
 			int count = 1;
 			for (int j = 0; j <= s.length() - 1; j++) {
