@@ -12,7 +12,7 @@ public class PrintUniqueCharInAString {
 		for (int i = 0; i <= s.length() - 1; i++) {
 			int count = 1;
 			for (int j = 0; j <= s.length() - 1; j++) {
-				if (s.charAt(i)==(s.charAt(j)) && (i != j)){
+				if (s.charAt(i)==(s.charAt(j)) && (i != j) ){
 					count++;
 				}
 			}
