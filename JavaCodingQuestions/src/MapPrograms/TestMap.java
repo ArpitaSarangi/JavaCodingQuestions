@@ -1,6 +1,7 @@
 package MapPrograms;
 
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.Map;
 
 public class TestMap {
@@ -9,7 +10,7 @@ public class TestMap {
 		// TODO Auto-generated method stub
 		
 		
-		Map<String, Integer> fruitPrices=new HashMap<>();
+		Map<String, Integer> fruitPrices=new Hashtable<>();
 		
 		fruitPrices.put("Apple", 34);
 		fruitPrices.put("Orange", 50);
